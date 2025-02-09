@@ -11,10 +11,11 @@ from tempfile import TemporaryFile
 from warnings import warn
 from functools import wraps
 
-try:
-    import audioop
-except ImportError:
-    import pyaudioop as audioop
+#try:
+#    import audioop
+#except ImportError:
+#    import pyaudioop as audioop
+import python-audio
 
 if sys.version_info >= (3, 0):
     basestring = str
